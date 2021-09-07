@@ -4,7 +4,7 @@ cd api
 FILE=.env
 if [ ! -f "$FILE" ]; then
     echo 'Creating .env file...'
-    mv .env.example .env
+    mv .env.example.bak .env
 fi
 
 echo "Building docker image..."
